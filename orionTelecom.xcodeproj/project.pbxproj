@@ -13,6 +13,8 @@
 		8400E7472753B07C004F7078 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8400E7452753B07C004F7078 /* Main.storyboard */; };
 		8400E7492753B08A004F7078 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8400E7482753B08A004F7078 /* Assets.xcassets */; };
 		8400E74C2753B08A004F7078 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8400E74A2753B08A004F7078 /* LaunchScreen.storyboard */; };
+		8400E7542753B194004F7078 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8400E7532753B193004F7078 /* TableViewCell.swift */; };
+		8400E7562753E5E6004F7078 /* VideoFullScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8400E7552753E5E6004F7078 /* VideoFullScreenVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		8400E7482753B08A004F7078 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8400E74B2753B08A004F7078 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8400E74D2753B08A004F7078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8400E7532753B193004F7078 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		8400E7552753E5E6004F7078 /* VideoFullScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFullScreenVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				8400E73F2753B07C004F7078 /* AppDelegate.swift */,
 				8400E7412753B07C004F7078 /* SceneDelegate.swift */,
 				8400E7432753B07C004F7078 /* ViewController.swift */,
+				8400E7552753E5E6004F7078 /* VideoFullScreenVC.swift */,
+				8400E7532753B193004F7078 /* TableViewCell.swift */,
 				8400E7452753B07C004F7078 /* Main.storyboard */,
 				8400E7482753B08A004F7078 /* Assets.xcassets */,
 				8400E74A2753B08A004F7078 /* LaunchScreen.storyboard */,
@@ -138,8 +144,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8400E7442753B07C004F7078 /* ViewController.swift in Sources */,
+				8400E7542753B194004F7078 /* TableViewCell.swift in Sources */,
 				8400E7402753B07C004F7078 /* AppDelegate.swift in Sources */,
 				8400E7422753B07C004F7078 /* SceneDelegate.swift in Sources */,
+				8400E7562753E5E6004F7078 /* VideoFullScreenVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
