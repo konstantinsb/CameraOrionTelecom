@@ -13,7 +13,6 @@ class TableViewCell: UITableViewCell {
     
     @IBOutlet weak var videoLabel: UILabel!
     
-    
     func config(with id: Int){
                 
         let urlString = "https://orionnet.online/api/v2/preview_images/\(id)"
@@ -32,5 +31,4 @@ class TableViewCell: UITableViewCell {
                 }
                 task.resume()
             }
-    
 }

@@ -16,9 +16,10 @@ class VideoFullScreenVC: UIViewController {
     
     var webPlayer: WKWebView!
     @IBOutlet weak var nameCameraLabel: UILabel!
+    var titleLabel = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-   
+        nameCameraLabel.text = titleLabel
     }
     
     func config(with id: Int){

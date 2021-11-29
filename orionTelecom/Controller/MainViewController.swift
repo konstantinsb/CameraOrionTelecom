@@ -59,8 +59,9 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource{
      
         let idVideo = cameraApi[indexPath.row].id
         let vc = storyboard?.instantiateViewController(identifier: "VideoFullScreenVC") as! VideoFullScreenVC
-//        vc.nameCameraLabel.text = cameraApi[indexPath.row].title
+        
         vc.config(with: idVideo)
+        vc.titleLabel = cameraApi[indexPath.row].title
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }
