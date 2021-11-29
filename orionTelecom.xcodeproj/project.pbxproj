@@ -9,25 +9,27 @@
 /* Begin PBXBuildFile section */
 		8400E7402753B07C004F7078 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8400E73F2753B07C004F7078 /* AppDelegate.swift */; };
 		8400E7422753B07C004F7078 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8400E7412753B07C004F7078 /* SceneDelegate.swift */; };
-		8400E7442753B07C004F7078 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8400E7432753B07C004F7078 /* ViewController.swift */; };
+		8400E7442753B07C004F7078 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8400E7432753B07C004F7078 /* MainViewController.swift */; };
 		8400E7472753B07C004F7078 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8400E7452753B07C004F7078 /* Main.storyboard */; };
 		8400E7492753B08A004F7078 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8400E7482753B08A004F7078 /* Assets.xcassets */; };
 		8400E74C2753B08A004F7078 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8400E74A2753B08A004F7078 /* LaunchScreen.storyboard */; };
 		8400E7542753B194004F7078 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8400E7532753B193004F7078 /* TableViewCell.swift */; };
 		8400E7562753E5E6004F7078 /* VideoFullScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8400E7552753E5E6004F7078 /* VideoFullScreenVC.swift */; };
+		841E8A852754C4B90039395C /* VideoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841E8A842754C4B90039395C /* VideoData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8400E73C2753B07C004F7078 /* orionTelecom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = orionTelecom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8400E73F2753B07C004F7078 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8400E7412753B07C004F7078 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8400E7432753B07C004F7078 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8400E7432753B07C004F7078 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		8400E7462753B07C004F7078 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8400E7482753B08A004F7078 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8400E74B2753B08A004F7078 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8400E74D2753B08A004F7078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8400E7532753B193004F7078 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		8400E7552753E5E6004F7078 /* VideoFullScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFullScreenVC.swift; sourceTree = "<group>"; };
+		841E8A842754C4B90039395C /* VideoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,15 +64,40 @@
 			children = (
 				8400E73F2753B07C004F7078 /* AppDelegate.swift */,
 				8400E7412753B07C004F7078 /* SceneDelegate.swift */,
-				8400E7432753B07C004F7078 /* ViewController.swift */,
-				8400E7552753E5E6004F7078 /* VideoFullScreenVC.swift */,
-				8400E7532753B193004F7078 /* TableViewCell.swift */,
-				8400E7452753B07C004F7078 /* Main.storyboard */,
+				841E8A872754CE0A0039395C /* Controller */,
+				841E8A862754CDFE0039395C /* Model */,
+				841E8A882754CE2F0039395C /* View */,
 				8400E7482753B08A004F7078 /* Assets.xcassets */,
 				8400E74A2753B08A004F7078 /* LaunchScreen.storyboard */,
 				8400E74D2753B08A004F7078 /* Info.plist */,
 			);
 			path = orionTelecom;
+			sourceTree = "<group>";
+		};
+		841E8A862754CDFE0039395C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				841E8A842754C4B90039395C /* VideoData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		841E8A872754CE0A0039395C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8400E7552753E5E6004F7078 /* VideoFullScreenVC.swift */,
+				8400E7532753B193004F7078 /* TableViewCell.swift */,
+				8400E7432753B07C004F7078 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		841E8A882754CE2F0039395C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8400E7452753B07C004F7078 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,11 +170,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8400E7442753B07C004F7078 /* ViewController.swift in Sources */,
+				8400E7442753B07C004F7078 /* MainViewController.swift in Sources */,
 				8400E7542753B194004F7078 /* TableViewCell.swift in Sources */,
 				8400E7402753B07C004F7078 /* AppDelegate.swift in Sources */,
 				8400E7422753B07C004F7078 /* SceneDelegate.swift in Sources */,
 				8400E7562753E5E6004F7078 /* VideoFullScreenVC.swift in Sources */,
+				841E8A852754C4B90039395C /* VideoData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

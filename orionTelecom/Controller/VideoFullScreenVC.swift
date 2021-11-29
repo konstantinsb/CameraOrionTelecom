@@ -13,10 +13,9 @@ import WebKit
 class VideoFullScreenVC: UIViewController {
 
     @IBOutlet weak var webPlayerView: UIView!
-    @IBOutlet weak var nameCameraLabel: UILabel!
     
     var webPlayer: WKWebView!
- 
+    @IBOutlet weak var nameCameraLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
    

@@ -7,46 +7,43 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
-    struct VideoData: Codable{
-        let id: Int
-        let title: String
-    }
-    
+class MainViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
     var cameraApi: [VideoData] = []
-  
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
         responseVideo()
-        
     }
-  func responseVideo() {
-            
-            let urlString = "https://orionnet.online/api/v1/cameras/public"
-            guard let url = URL(string: urlString) else { return }
-           
-            URLSession.shared.dataTask(with: url) { data, response, error in
-                if let error = error {
-                    print(error)
-                       return
-                  }
-                guard let data = data else {return}
-                    do {
-                        let json = try JSONDecoder().decode([VideoData].self, from: data)
-                        DispatchQueue.main.async {
+    func responseVideo() {
+              
+              let urlString = "https://orionnet.online/api/v1/cameras/public"
+              guard let url = URL(string: urlString) else { return }
+             
+              URLSession.shared.dataTask(with: url) { data, response, error in
+                  if let error = error {
+                      print(error)
+                         return
+                    }
+                  guard let data = data else {return}
+                      do {
+                          let json = try JSONDecoder().decode([VideoData].self, from: data)
+                          DispatchQueue.main.async {
                             self.tableView.reloadData()
-                        }
+                          }
                             self.cameraApi = json
-                    
-                    }catch {
-                        print(error)
-                }
+                      }catch {
+                          print(error)
+                  }
             }.resume()
         }
+}
+
+// MARK: - UITableViewDelegate and UITableViewDataSource
+extension MainViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return cameraApi.count
